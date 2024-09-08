@@ -31,7 +31,7 @@ class TransactionRequest extends FormRequest
                 Rule::exists('vehicles', 'id')->where('status', 'available')
             ],
             'id_spv' => 'required|exists:users,id',
-            'id_pool' => 'required|exists:users,id',
+            'id_man' => 'required|exists:users,id',
             'start_date' => 'required',
             'end_date' => 'required',
         ];

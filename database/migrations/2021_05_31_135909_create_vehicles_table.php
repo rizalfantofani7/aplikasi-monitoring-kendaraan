@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateVehiclesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
+            $table->enum('type', ['penumpang', 'barang']);
             $table->string('name');
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->enum('role', ['admin', 'supervisor', 'manager']);
-            $table->rememberToken();
+            $table->enum('status', ['available', 'unavailable', 'being booked'])->default('available');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('vehicles');
     }
 }

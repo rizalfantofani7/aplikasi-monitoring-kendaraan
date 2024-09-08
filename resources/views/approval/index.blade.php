@@ -18,7 +18,7 @@
                     @if (!$item->approved_spv)
                         <span class="badge badge-warning" style="display: block; width: max-content">NEED SPV APPROVAL</span>
                     @endif
-                    @if (!$item->approved_pool)
+                    @if (!$item->approved_man)
                         <span class="badge badge-warning">NEED POOL APPROVAL</span>
                     @endif
                 </td>

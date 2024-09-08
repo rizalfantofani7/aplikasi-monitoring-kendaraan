@@ -24,8 +24,8 @@
         </div>
         <div class="col-12 col-lg-6">
             <div class="mb-3">
-                <label for="pool" class="form-label">Pool Officer</label>
-                <input type="text" class="form-control" id="pool" name="pool" value="{{ $data->pool->name }}" disabled>
+                <label for="man" class="form-label">Manager</label>
+                <input type="text" class="form-control" id="man" name="man" value="{{ $data->man->name }}" disabled>
             </div>
         </div>
     </div>

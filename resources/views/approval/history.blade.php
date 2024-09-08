@@ -23,10 +23,10 @@
             @if (!$item->approved_spv)
             <span class="badge badge-warning">NEED SPV APPROVAL</span>
             @endif
-            @if (!$item->approved_pool)
-            <span class="badge badge-warning">NEED POOL APPROVAL</span>
+            @if (!$item->approved_man)
+            <span class="badge badge-warning">NEED MAN APPROVAL</span>
             @endif
-            @if ($item->approved_spv && $item->approved_pool)
+            @if ($item->approved_spv && $item->approved_man)
             <span class="badge badge-success">APPROVED</span>
             @endif
         </td>

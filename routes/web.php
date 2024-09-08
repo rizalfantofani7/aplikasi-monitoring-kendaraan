@@ -32,7 +32,7 @@ Route::prefix('admin')->middleware(['auth'])->group(function() {
 Route::group([
     'prefix' => '{role}',
     'middleware' => 'auth',
-    'where' => ['role' => 'supervisor|pool-officer']], function() {
+    'where' => ['role' => 'supervisor|manager']], function() {
         Route::get('/approval-request', [ApprovalController::class, 'index'])->name('approval-request');
         Route::post('/approve/{id_trx}', [ApprovalController::class, 'store'])->name('approve');
         Route::get('/approval/{id_trx}', [ApprovalController::class, 'show'])->name('approval.detail');

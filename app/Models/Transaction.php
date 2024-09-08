@@ -12,9 +12,9 @@ class Transaction extends Model
     protected $fillable = [
         'vehicle_id',
         'employee_name',
-        'id_pool',
+        'id_man',
         'id_spv',
-        'approved_pool',
+        'approved_man',
         'approved_spv',
         'start_date',
         'end_date'
@@ -31,6 +31,6 @@ class Transaction extends Model
     }
     
     public function pool() {
-        return $this->belongsTo(User::class, 'id_pool', 'id');
+        return $this->belongsTo(User::class, 'id_man', 'id');
     }
 }

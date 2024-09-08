@@ -45,9 +45,9 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                    <label for="id-pool" class="form-label">Penjaga Pool</label> <br>
-                    <select class="form-select" id="id-pool" name="id_pool">
-                        @foreach ($pool as $item)
+                    <label for="id-man" class="form-label">Manager</label> <br>
+                    <select class="form-select" id="id-man" name="id_man">
+                        @foreach ($man as $item)
                         <option value="{{ $item->id }}">{{ $item->name }}</option>    
                         @endforeach
                     </select>

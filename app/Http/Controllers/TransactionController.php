@@ -36,9 +36,9 @@ class TransactionController extends Controller
         if (Auth::user()->role == 'admin') {
             $vehicle = Vehicle::where('status', 'available')->get();
             $spv = User::where('role', 'supervisor')->get();
-            $pool = User::where('role', 'pool-officer')->get();
+            $man = User::where('role', 'manager')->get();
 
-            return view('admin.trx-create', compact('vehicle', 'spv', 'pool'));
+            return view('admin.trx-create', compact('vehicle', 'spv', 'man'));
         }
 
         abort(403);

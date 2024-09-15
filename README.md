@@ -31,31 +31,31 @@
 2. Masuk ke tab ```peminjaman``` setelah itu pilih ```riwayat peminjaman```
 3. Tekan tombol ```Export``` maka secara otomatis sistem akan melakukan download file excel dengan data peminjaman yang telah disetujui dalam 1 tahun terakhir
 
-## List dummy user
-Admin:
--Username: admin
--Password: password
--Username: admin2
--Password: password
+### List dummy user
+## Admin:
+- **Username**: admin
+  - **Password**: password
+- **Username**: admin2
+  - **Password**: password
 
-Supervisor:
-Supervisor 1:
--Username: spv1
--Password: password
--Supervisor 2:
--Username: spv2
--Password: password
--Supervisor 3:
--Username: spv3
--Password: password
+## Supervisor:
+- **Supervisor 1**:
+  - **Username**: spv1
+  - **Password**: password
+- **Supervisor 2**:
+  - **Username**: spv2
+  - **Password**: password
+- **Supervisor 3**:
+  - **Username**: spv3
+  - **Password**: password
 
-Manager:
--Manager 1:
--Username: manager1
--Password: password
--Manager 2:
--Username: manager2
--Password: password
--Manager 3:
--Username: manager3
--Password: password
+## Manager:
+- **Manager 1**:
+  - **Username**: manager1
+  - **Password**: password
+- **Manager 2**:
+  - **Username**: manager2
+  - **Password**: password
+- **Manager 3**:
+  - **Username**: manager3
+  - **Password**: password

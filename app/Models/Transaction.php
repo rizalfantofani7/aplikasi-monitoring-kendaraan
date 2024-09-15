@@ -14,6 +14,7 @@ class Transaction extends Model
         'employee_name',
         'id_man',
         'id_spv',
+        'driver_id',
         'approved_man',
         'approved_spv',
         'start_date',
@@ -26,11 +27,16 @@ class Transaction extends Model
         return $this->belongsTo(Vehicle::class, 'vehicle_id', 'id');
     }
 
+    public function driver()
+    {
+        return $this->belongsTo(Driver::class,'driver_id', 'id');
+    }
+
     public function spv() {
         return $this->belongsTo(User::class, 'id_spv', 'id');
     }
     
-    public function pool() {
+    public function man() {
         return $this->belongsTo(User::class, 'id_man', 'id');
     }
 }

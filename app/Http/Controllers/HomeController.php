@@ -25,7 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
-
         if ($user->role == 'admin') return redirect()->route('admin.index');
         else return redirect()->route('approval-request', ['role' => Auth::user()->role]);
         

@@ -32,6 +32,7 @@ class TransactionRequest extends FormRequest
             ],
             'id_spv' => 'required|exists:users,id',
             'id_man' => 'required|exists:users,id',
+            'driver_id' => 'required',
             'start_date' => 'required',
             'end_date' => 'required',
         ];

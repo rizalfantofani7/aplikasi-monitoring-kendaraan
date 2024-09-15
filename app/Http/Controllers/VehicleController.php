@@ -86,7 +86,6 @@ class VehicleController extends Controller
     {
         $vehicle = Vehicle::findOrFail($id);  // Find the vehicle by ID
         $vehicle->delete();  // Delete the vehicle
-
         return redirect()->route('kendaraan.index')->with(['success' => 'Kendaraan berhasil dihapus']);
     }
 }

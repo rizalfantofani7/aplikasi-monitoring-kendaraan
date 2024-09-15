@@ -31,7 +31,6 @@
                 <select class="form-select" id="type" name="type" required>
                     <option value="penumpang">Penumpang</option>
                     <option value="barang">Barang</option>
-                    <!-- Add other types as necessary -->
                 </select>
             </div>
         </div>

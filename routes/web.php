@@ -27,9 +27,8 @@ Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->middleware(['auth'])->group(function() {
-    Route::get('/', function() {
-        return view('admin.index');
-    })->name('admin.index');
+    Route::get('/', [TransactionController::class, 'dashboard'])->name('admin.index');
+    Route::get('/export', [TransactionController::class, 'export'])->name('export-transaction');
     Route::resource('kendaraan', VehicleController::class)->except(['edit', 'update', 'destroy']);;
     Route::resource('peminjaman', TransactionController::class)->except(['edit', 'update', 'destroy']);;
 });

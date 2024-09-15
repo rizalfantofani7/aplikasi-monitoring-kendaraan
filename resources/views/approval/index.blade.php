@@ -19,7 +19,7 @@
                         <span class="badge badge-warning" style="display: block; width: max-content">NEED SPV APPROVAL</span>
                     @endif
                     @if (!$item->approved_man)
-                        <span class="badge badge-warning">NEED POOL APPROVAL</span>
+                        <span class="badge badge-warning">NEED MAN APPROVAL</span>
                     @endif
                 </td>
                 <td>

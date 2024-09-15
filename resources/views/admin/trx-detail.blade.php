@@ -15,6 +15,13 @@
             </div>
         </div>
     </div>
+    <div class="col-12 col-lg-6">
+            <div class="mb-3">
+                <label for="driver" class="form-label">Driver</label>
+                <input type="text" class="form-control" id="driver" name="driver" value="{{ $data->driver->name }}" disabled>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-lg-6">
             <div class="mb-3">

@@ -10,6 +10,8 @@
 @endif
 <a class="btn btn-primary btn-sm mb-3" href="{{ route('peminjaman.create') }}">Pinjam Kendaraan</a>
 <table class="table table-striped table-hover">
+<a href="export"
+class="btn btn-primary btn-sm mb-3 bg-[#2602FF] text-white py-1 px-2 rounded-md">Export</a>
     <tr>
         <th>No.</th>
         <th>Nama Peminjam</th>
@@ -23,7 +25,7 @@
         <td>{{ $item->employee_name }}</td>
         <td>{{ $item->vehicle->name }}</td>
         <td>
-            @if (!($item->approved_pool && $item->approved_spv))
+            @if (!($item->approved_man && $item->approved_spv))
             <span class="badge badge-warning">APPROVAL PROCESS</span>
             @else
                 @if (Date::now() < $item->start_date)

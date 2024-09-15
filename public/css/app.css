@@ -6,6 +6,29 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/* Custom style for select element */
+.custom-select-style {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Ensure all inputs and selects are displayed in block layout */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="date"],
+input[type="text"],
+select {
+  display: block;
+  width: 100%;
+}
+
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
